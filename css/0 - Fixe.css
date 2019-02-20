@@ -26,7 +26,7 @@ body {
   flex-direction: column;
   flex-shrink: 0;
   min-height: 100vh;
-  max-width: 22.5%;
+  max-width: 25em;
   min-width: 22.5em;
   border-right: 2px solid #135a87;
   z-index: 1;
