@@ -44,7 +44,7 @@
   height: 1em;
   width: 1em;
   top: 1.25em;
-  left: 2.5em;
+  left: 1em;
 }
 
 .Angle_F2 {
@@ -53,7 +53,7 @@
   border-right: 2px solid #ec008c;
   height: 1em;
   width: 1em;
-  top: 3em;
+  top: 2.75em;
   right: 0.5em;
 }
 
@@ -66,7 +66,6 @@
 }
 
 .Partie h2 {
-  margin-left: 1em;
   padding-left: 0.25em;
   font-size: 1.75em;
 }
@@ -164,5 +163,33 @@
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
+  #Menu_Haut {
 
+  }
+
+  #Menu_Haut h1 {
+    font-size: 1.75em;
+  }
+
+}
+
+/* POUR LES ECRANS INFERIEURS A 835px DE LARGE */
+@media screen and (max-width:835px) {
+  #Menu_Haut h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 705px DE LARGE */
+@media screen and (max-width:705px) {
+  #Menu_Haut h1 {
+    font-size: 1.25em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 550px DE LARGE */
+@media screen and (max-width:550px) {
+  #Menu_Haut h1 {
+    font-size: 1.1em;
+  }
 }

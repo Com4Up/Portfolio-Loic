@@ -4,9 +4,9 @@
 }
 
 html {
-  height: 100%;
+
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
@@ -14,12 +14,10 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow: auto;
-  min-height: 100vh;
-  width: 100%;
 }
 
 /* MENU LATERAL */
-#Menu_Mobile {
+#Menu_Mobile_Haut, #Menu_Mobile_Bas {
   display: none;
 }
 
@@ -252,7 +250,6 @@ body {
 
 #stars:after {
   content: " ";
-  position: absolute;
   top: 2000px;
   width: 1px;
   height: 1px;
@@ -271,7 +268,6 @@ body {
 
 #stars2:after {
   content: " ";
-  position: absolute;
   top: 2000px;
   width: 2px;
   height: 2px;
@@ -290,7 +286,6 @@ body {
 
 #stars3:after {
   content: " ";
-  position: absolute;
   top: 2000px;
   width: 3px;
   height: 3px;
@@ -311,26 +306,38 @@ body {
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
   #Menu_Lateral {
     display: none;
   }
 
-  #Menu_Mobile {
+  #Menu_Mobile_Haut, #Menu_Mobile_Bas {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   #Mobile_Header {
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   #Separation_Header_Mobile {
     border: 1px solid #135a87;
     box-shadow: 0px 0px 10px #135a87;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   #Nom_Mobile {

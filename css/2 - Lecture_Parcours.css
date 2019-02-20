@@ -1,0 +1,174 @@
+#Contenu_Principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#Menu_Haut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Kiona";
+  color: #135a87;
+  border-bottom: 2px solid #135a87;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#Menu_Haut h1 {
+  font-size: 2em;
+  font-weight: normal;
+  cursor: pointer;
+  width: 33.33%;
+  text-align: center;
+}
+
+#Menu_Haut h1:hover {
+  color: #ec008c;
+  transition-duration: 500ms;
+}
+
+#Selection_Menu {
+  color: #ec008c;
+}
+
+#Selection_Gauche, #Selection_Droite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#Partie {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #135a87;
+  font-family: "Kiona";
+  font-weight: normal;
+  border-bottom: 2px solid #ec008c;
+}
+
+#Position_Partie {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Position_Partie i {
+  font-size: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+}
+
+#Position_Partie h2 {
+  font-size: 2em;
+  color: #ec008c;
+}
+
+#Position_Partie h3 {
+  font-size: 1.5em;
+}
+
+#Partie_Basse {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #135a87;
+  font-family: "Kiona";
+  font-weight: normal;
+  border-top: 2px solid #ec008c;
+}
+
+#Position_Partie_Basse {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Position_Partie_Basse i {
+  font-size: 2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  color: #ec008c;
+}
+
+#Position_Partie_Basse h4 {
+  font-size: 1em;
+  color: white;
+}
+
+#Position_Partie_Basse .fa-globe {
+  color: #135a87;
+}
+
+.Elements_bas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Slash {
+  color: #ec008c;
+  font-size: 4em;
+  margin: 0 0 0.15em 0;
+  text-shadow: 0px 0px 10px #ec008c;
+}
+
+.Contenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+}
+
+/* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
+@media screen and (max-width:1280px) {
+#Menu_Haut h1 {
+  font-size: 1.5em;
+}
+
+.Slash {
+  font-size: 2.5em;
+}
+}
+
+/* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
+@media screen and (max-width:1060px) {
+  #Menu_Haut h1 {
+    font-size: 1.3em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
+@media screen and (max-width:1024px) {
+  #Menu_Haut {
+
+  }
+
+  #Menu_Haut h1 {
+    font-size: 1.75em;
+  }
+
+}
+
+/* POUR LES ECRANS INFERIEURS A 835px DE LARGE */
+@media screen and (max-width:835px) {
+  #Menu_Haut h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 705px DE LARGE */
+@media screen and (max-width:705px) {
+  #Menu_Haut h1 {
+    font-size: 1.25em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 550px DE LARGE */
+@media screen and (max-width:550px) {
+  #Menu_Haut h1 {
+    font-size: 1.1em;
+  }
+}
