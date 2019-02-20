@@ -8,19 +8,24 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  font-family: "Kiona";
-  color: #135a87;
+  justify-content: center;
   border-bottom: 2px solid #135a87;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-#Menu_Haut h1 {
-  font-size: 2em;
+#Menu_Haut a {
+  text-decoration: none;
+  font-family: "Kiona";
+  color: #135a87;
+  font-size: 1em;
   font-weight: normal;
   cursor: pointer;
   width: 33.33%;
   text-align: center;
+}
+
+#Menu_Haut a h1 {
+  font-weight: normal;
 }
 
 #Menu_Haut h1:hover {
@@ -37,6 +42,8 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
+  text-decoration: none;
+  color: #135a87;
 }
 
 #Partie {
@@ -45,6 +52,25 @@
   font-family: "Kiona";
   font-weight: normal;
   border-bottom: 2px solid #ec008c;
+}
+
+#Cancel {
+
+}
+
+.fa-times {
+  margin: 0;
+  padding: 0;
+  color: #ec008c;
+}
+
+#Selection_Gauche, #Centre, #Selection_Droite {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
 }
 
 #Position_Partie {
@@ -64,10 +90,12 @@
 #Position_Partie h2 {
   font-size: 2em;
   color: #ec008c;
+  font-weight: normal;
 }
 
 #Position_Partie h3 {
   font-size: 1.5em;
+  font-weight: normal;
 }
 
 #Partie_Basse {
@@ -84,6 +112,7 @@
   text-align: center;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #Position_Partie_Basse i {
@@ -93,26 +122,61 @@
   color: #ec008c;
 }
 
-#Position_Partie_Basse h4 {
-  font-size: 1em;
-  color: white;
-}
-
 #Position_Partie_Basse .fa-globe {
   color: #135a87;
+}
+
+#Bloque_1, #Bloque_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+#Bloque_1 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+#Bloque_2 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
 }
 
 .Elements_bas {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.Elements_bas h4 {
+  font-size: 1em;
+  color: white;
+  font-family: "Kiona";
+  font-weight: bolder;
+}
+
+.Elements_bas a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #135a87;
+  font-weight: bolder;
 }
 
 .Slash {
+  font-family: "Kiona";
   color: #ec008c;
   font-size: 4em;
   margin: 0 0 0.15em 0;
   text-shadow: 0px 0px 10px #ec008c;
+  font-weight: normal;
 }
 
 .Contenu {
@@ -120,6 +184,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   color: white;
+  justify-content: center;
+  margin: 2em 10em 2em 10em;
+  font-family: "Lato";
+  min-height: 30vh;
+  flex-grow: 1;
 }
 
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
@@ -142,12 +211,20 @@
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
-  #Menu_Haut {
-
-  }
 
   #Menu_Haut h1 {
     font-size: 1.75em;
+  }
+
+  .Contenu {
+    min-height: 80vh;
+    margin: 2em 2.5em 2em 2.5em;
+  }
+
+  #Partie_Basse {
+    position: fixed;
+    bottom: 4em;
+    width: 100%;
   }
 
 }
@@ -157,6 +234,15 @@
   #Menu_Haut h1 {
     font-size: 1.5em;
   }
+
+  #Bloque_1 {
+    width: 100%;
+  }
+
+  #Bloque_2 {
+    width: 100%;
+  }
+
 }
 
 /* POUR LES ECRANS INFERIEURS A 705px DE LARGE */
