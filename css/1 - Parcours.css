@@ -88,6 +88,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 2em 0em 2em 3em;
+}
+
+.Contenu a:hover {
+  color: #ec008c;
 }
 
 .Conteneur {
@@ -96,7 +101,7 @@
   color: white;
   font-weight: normal;
   font-family: "Kiona";
-  margin: 3em 0em 3em 3em;
+  margin: 1.5em;
   padding: 0;
   height: 200px;
   width: 200px;
@@ -104,6 +109,11 @@
   justify-content: center;
   border: 2px solid rgba(28, 110, 138, 0.3);
   text-decoration: none;
+  text-align: center;
+}
+
+.Conteneur h3 {
+  margin: 0 0.25em 0 0.25em;
 }
 
 .Angle {
@@ -152,13 +162,13 @@
 
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
 @media screen and (max-width:1280px) {
-#Menu_Haut h1 {
-  font-size: 1.5em;
-}
+  #Menu_Haut h1 {
+    font-size: 1.5em;
+  }
 
-.Slash {
-  font-size: 2.5em;
-}
+  .Slash {
+    font-size: 2.5em;
+  }
 }
 
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
@@ -170,30 +180,11 @@
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
-
-  #Menu_Haut h1 {
-    font-size: 1.75em;
+  #Menu_Haut {
+    display: none;
   }
 
-}
-
-/* POUR LES ECRANS INFERIEURS A 835px DE LARGE */
-@media screen and (max-width:835px) {
-  #Menu_Haut h1 {
-    font-size: 1.5em;
-  }
-}
-
-/* POUR LES ECRANS INFERIEURS A 705px DE LARGE */
-@media screen and (max-width:705px) {
-  #Menu_Haut h1 {
-    font-size: 1.25em;
-  }
-}
-
-/* POUR LES ECRANS INFERIEURS A 550px DE LARGE */
-@media screen and (max-width:550px) {
-  #Menu_Haut h1 {
-    font-size: 1.1em;
+  #Selection_Menu_Bas {
+    color: #ec008c;
   }
 }

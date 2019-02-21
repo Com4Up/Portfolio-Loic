@@ -33,63 +33,6 @@
   transition-duration: 500ms;
 }
 
-#Contenu div {
-  display: flex;
-  flex-direction: column;
-}
-
-#Contenu form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 2em auto 2em auto;
-}
-
-#Contenu form input, #Contenu form textarea {
-  margin: 1em 0 1em 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  border: 0;
-}
-
-#Contenu form input {
-  height: 3em;
-  font-family: "Kiona";
-  font-size: 1.5em;
-  padding-left: 1em;
-  font-weight: bolder;
-  color: white;
-}
-
-#Contenu form input::placeholder {
-  color: #135a87;
-}
-
-#Contenu form textarea {
-  height: 6em;
-  font-family: "Kiona";
-  font-size: 1.5em;
-  padding-left: 1em;
-  font-weight: bolder;
-  color: white;
-  padding-top: 0.75em;
-}
-
-#Contenu form textarea::placeholder {
-  color: #135a87;
-}
-
-#Bouton_Envoyer {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#Bouton_Envoyer input {
-  width: 50%;
-}
 
 .Slash {
   font-family: "Kiona";
@@ -126,12 +69,5 @@
 
   #Selection_Menu_Bas {
     color: #ec008c;
-  }
-
-  #Contenu form {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin: 2em auto 2em auto;
   }
 }

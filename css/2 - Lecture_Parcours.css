@@ -54,9 +54,7 @@
   border-bottom: 2px solid #ec008c;
 }
 
-#Cancel {
-
-}
+#Cancel {}
 
 .fa-times {
   margin: 0;
@@ -64,7 +62,7 @@
   color: #ec008c;
 }
 
-#Selection_Gauche, #Centre, #Selection_Droite {
+#Selection_Gauche, #Selection_Centre, #Selection_Droite {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -79,6 +77,11 @@
   text-align: center;
   justify-content: space-around;
   align-items: center;
+}
+
+#Position_Partie a:hover {
+  color: #ec008c;
+  transition-duration: 500ms;
 }
 
 #Position_Partie i {
@@ -146,6 +149,11 @@
   width: 50%;
 }
 
+#Footer_Bas {
+  min-height: 20vh;
+  flex-grow: 1;
+}
+
 .Elements_bas {
   display: flex;
   flex-direction: row;
@@ -187,19 +195,17 @@
   justify-content: center;
   margin: 2em 10em 2em 10em;
   font-family: "Lato";
-  min-height: 30vh;
-  flex-grow: 1;
 }
 
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
 @media screen and (max-width:1280px) {
-#Menu_Haut h1 {
-  font-size: 1.5em;
-}
+  #Menu_Haut h1 {
+    font-size: 1.5em;
+  }
 
-.Slash {
-  font-size: 2.5em;
-}
+  .Slash {
+    font-size: 2.5em;
+  }
 }
 
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
@@ -211,9 +217,12 @@
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
+  #Menu_Haut {
+    display: none;
+  }
 
-  #Menu_Haut h1 {
-    font-size: 1.75em;
+  #Selection_Menu_Bas {
+    color: #ec008c;
   }
 
   .Contenu {
@@ -226,35 +235,15 @@
     bottom: 4em;
     width: 100%;
   }
-
 }
 
 /* POUR LES ECRANS INFERIEURS A 835px DE LARGE */
 @media screen and (max-width:835px) {
-  #Menu_Haut h1 {
-    font-size: 1.5em;
-  }
-
   #Bloque_1 {
     width: 100%;
   }
 
   #Bloque_2 {
     width: 100%;
-  }
-
-}
-
-/* POUR LES ECRANS INFERIEURS A 705px DE LARGE */
-@media screen and (max-width:705px) {
-  #Menu_Haut h1 {
-    font-size: 1.25em;
-  }
-}
-
-/* POUR LES ECRANS INFERIEURS A 550px DE LARGE */
-@media screen and (max-width:550px) {
-  #Menu_Haut h1 {
-    font-size: 1.1em;
   }
 }

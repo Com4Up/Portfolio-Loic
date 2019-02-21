@@ -4,7 +4,6 @@
 }
 
 html {
-
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: auto;
 }
@@ -306,7 +305,6 @@ body {
 
 /* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
 @media screen and (max-width:1024px) {
-
   body {
     display: flex;
     flex-direction: column;
@@ -377,7 +375,11 @@ body {
     margin-bottom: 0.5em;
   }
 
-  #Icone_Footer i:hover {
+#Icone_Footer a {
+  color: #135a87;
+}
+
+  #Icone_Footer a i:hover {
     color: #ec008c;
     cursor: pointer;
   }

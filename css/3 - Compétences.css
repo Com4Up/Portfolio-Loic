@@ -1,0 +1,194 @@
+#Contenu_Principal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#Menu_Haut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #135a87;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#Menu_Haut a {
+  text-decoration: none;
+  font-family: "Kiona";
+  color: #135a87;
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
+  width: 33.33%;
+  text-align: center;
+}
+
+#Menu_Haut a h1 {
+  font-weight: normal;
+}
+
+#Menu_Haut h1:hover {
+  color: #ec008c;
+  transition-duration: 500ms;
+}
+
+#Selection_Menu {
+  color: #ec008c;
+}
+
+.Position_Partie {
+  display: flex;
+  flex-direction: row;
+}
+
+.Angle_F1 {
+  position: relative;
+  border-top: 2px solid #ec008c;
+  border-left: 2px solid #ec008c;
+  height: 1em;
+  width: 1em;
+  top: 1.25em;
+  left: 1em;
+}
+
+.Angle_F2 {
+  position: relative;
+  border-bottom: 2px solid #ec008c;
+  border-right: 2px solid #ec008c;
+  height: 1em;
+  width: 1em;
+  top: 2.75em;
+  right: 0.5em;
+}
+
+.Partie {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #135a87;
+  font-family: "Kiona";
+  font-weight: normal;
+  border-bottom: 2px solid #ec008c;
+}
+
+.Partie h2 {
+  padding-left: 0.25em;
+  font-size: 1.75em;
+}
+
+.Slash {
+  font-family: "Kiona";
+  color: #ec008c;
+  font-size: 4em;
+  margin: 0 0 0.15em 0;
+  text-shadow: 0px 0px 10px #ec008c;
+  font-weight: normal;
+}
+
+.Contenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 2em 0em 2em 3em;
+}
+
+.Contenu a:hover {
+  color: #ec008c;
+}
+
+.Conteneur {
+  display: flex;
+  background-color: rgba(4, 29, 51, 0.5);
+  color: white;
+  font-weight: normal;
+  font-family: "Kiona";
+  margin: 1.5em;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(28, 110, 138, 0.3);
+  text-decoration: none;
+  text-align: center;
+}
+
+.Conteneur h3 {
+  margin: 0 0.25em 0 0.25em;
+}
+
+.Conteneur i {
+  font-size: 4em;
+}
+
+.Angle {
+  position: absolute;
+}
+
+.Angle_Bleu_1 {
+  position: absolute;
+  border-top: 2px solid #135a87;
+  border-left: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  right: 5.25em;
+  bottom: 5.25em;
+}
+
+.Angle_Bleu_2 {
+  position: absolute;
+  border-bottom: 2px solid #135a87;
+  border-right: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  left: 5.25em;
+  top: 5.25em;
+}
+
+.Angle_Rose_1 {
+  position: absolute;
+  border-top: 2px solid #ec008c;
+  border-right: 2px solid #ec008c;
+  height: 1em;
+  width: 1em;
+  left: 5.25em;
+  bottom: 5.25em;
+}
+
+.Angle_Rose_2 {
+  position: absolute;
+  border-bottom: 2px solid #ec008c;
+  border-left: 2px solid #ec008c;
+  height: 1em;
+  width: 1em;
+  right: 5.25em;
+  top: 5.25em;
+}
+
+/* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
+@media screen and (max-width:1280px) {
+  #Menu_Haut h1 {
+    font-size: 1.5em;
+  }
+
+  .Slash {
+    font-size: 2.5em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
+@media screen and (max-width:1060px) {
+  #Menu_Haut h1 {
+    font-size: 1.3em;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 1024px DE LARGE */
+@media screen and (max-width:1024px) {
+  #Menu_Haut {
+    display: none;
+  }
+
+  #Selection_Menu_Bas {
+    color: #ec008c;
+  }
+}
