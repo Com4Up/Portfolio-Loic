@@ -375,9 +375,9 @@ body {
     margin-bottom: 0.5em;
   }
 
-#Icone_Footer a {
-  color: #135a87;
-}
+  #Icone_Footer a {
+    color: #135a87;
+  }
 
   #Icone_Footer a i:hover {
     color: #ec008c;
