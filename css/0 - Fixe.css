@@ -1,18 +1,25 @@
 @font-face {
-  font-family: "Kiona";
-  src: url('../fonts/Kiona-Regular.ttf');
-}
-
-html {
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow: auto;
+  font-family: 'Kiona';
+  src: url('../fonts/Kiona-Regular.ttf') format('truetype'),
+  url('../fonts/Kiona-Regular.woff2') format('woff2'),
+  url('../fonts/Kiona-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* MENU LATERAL */
@@ -21,12 +28,12 @@ body {
 }
 
 #Menu_Lateral {
-  display: flex;
-  flex-direction: column;
+  position: fixed;
   flex-shrink: 0;
-  min-height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
   max-width: 25em;
-  min-width: 22.5em;
+  min-width: 25em;
   border-right: 2px solid #135a87;
   z-index: 1;
   overflow-y: auto;
@@ -37,7 +44,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1.5em;
+  padding-top: 2.5em;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -110,8 +117,14 @@ body {
   justify-content: center;
 }
 
+#Photo_Description {
+  display: flex;
+  flex-direction: column;
+  min-height: 25em;
+}
+
 #Nom {
-  font-family: "Kiona";
+  font-family: 'Kiona';
   color: #ec008c;
   padding: 0;
   margin: 0.75em 0em 0.25em 0em;
@@ -135,11 +148,16 @@ body {
   width: 90%;
   padding: 0;
   margin: 2em 0 2em 0;
+  font-weight: lighter;
 }
 
 #Separation_Menu {
   width: 85%;
-  border: 1px solid #135a87;
+  border: 0;
+  border-top: 2px solid #135a87;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #Social {
@@ -149,6 +167,7 @@ body {
   align-items: center;
   width: 100%;
   margin: 1em 0 1em 0;
+  min-height: 17.5em;
 }
 
 #Social_Haut {
@@ -177,7 +196,7 @@ body {
 }
 
 #Facebook a p, #Linkedin a p, #YouTube a p, #Twitch a p {
-  font-family: "Kiona";
+  font-family: 'Kiona';
   color: #ec008c;
   font-size: 1.4em;
   margin: 0.5em 0 0.5em 0;
@@ -198,7 +217,7 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-family: "Kiona";
+  font-family: 'Kiona';
   color: #135a87;
   font-size: 1.5em;
   font-weight: bold;
@@ -221,7 +240,7 @@ body {
 
 #Mentions a {
   text-decoration: none;
-  font-family: "Kiona";
+  font-family: 'Kiona';
   color: #135a87;
   font-size: 1em;
 }
@@ -319,12 +338,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   #Mobile_Header {
     display: flex;
     flex-direction: column;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
@@ -339,7 +360,7 @@ body {
   }
 
   #Nom_Mobile {
-    font-family: "Kiona";
+    font-family: 'Kiona';
     color: #ec008c;
     padding: 0;
     margin: 0.5em 0em 0.25em 0em;

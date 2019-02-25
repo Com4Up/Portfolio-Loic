@@ -189,6 +189,10 @@
     display: none;
   }
 
+  #Contenu_Principal {
+    padding-left: 0;
+  }
+
   #Selection_Menu_Bas {
     color: #ec008c;
   }

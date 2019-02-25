@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding-left: 25em;
 }
 
 #Menu_Haut {
@@ -59,11 +60,9 @@
   border-bottom: 2px solid #ec008c;
 }
 
-#Cancel {}
-
 .fa-times {
   margin: 0;
-  padding: 0;
+  padding: 0 1em 0 0;
   color: #ec008c;
 }
 
@@ -212,6 +211,10 @@
   .Slash {
     font-size: 2.5em;
   }
+
+  .Contenu {
+    margin: 2em 5em 2em 5em;
+  }
 }
 
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
@@ -229,6 +232,10 @@
 
   #Selection_Menu_Bas {
     color: #ec008c;
+  }
+
+  #Contenu_Principal {
+    padding-left: 0;
   }
 
   .Contenu {
