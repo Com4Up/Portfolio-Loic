@@ -7,6 +7,19 @@
   font-style: normal;
 }
 
+@keyframes social_icon_anim {
+  0% {opacity: 1;}
+  50% {opacity:  0; transform: translateY(20px);}
+  51% {opacity:  1; transform: translateY(-20px);}
+  100% {opacity:  1; transform: translateY(0);}
+}
+
+#Facebook a:hover>i, #Linkedin a:hover>i, #YouTube a:hover>i, #Twitch a:hover>i {
+
+animation-name: social_icon_anim;
+animation-duration: 0.7s;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -20,6 +33,59 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#Contenu_Fixe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#Contenu_Principal {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 25em;
+  margin: 0;
+}
+
+#Centre_Menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#Centre_Menu a {
+  text-decoration: none;
+  font-family: "Kiona";
+  color: #135a87;
+  font-size: 1em;
+  font-weight: normal;
+  cursor: pointer;
+  width: 32.66%;
+  text-align: center;
+}
+
+#Centre_Menu a h1 {
+  font-weight: normal;
+}
+
+#Centre_Menu h1:hover {
+  color: #ec008c;
+  transition-duration: 500ms;
+}
+
+#Selection_Menu {
+  color: #ec008c;
+}
+
+#Menu_Haut {
+  border-bottom: 2px solid #135a87;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* MENU LATERAL */
@@ -38,6 +104,20 @@ body {
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+#Menu_Lateral::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+#Menu_Lateral::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+#Menu_Lateral::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #ec008c;
+  -webkit-box-shadow: 0px 0px 30px 20px #ec008c;
 }
 
 #Ensemble_Image {
