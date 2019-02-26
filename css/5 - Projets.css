@@ -36,21 +36,28 @@
   font-size: 1.75em;
 }
 
-.Slash {
-  font-family: "Kiona";
-  color: #ec008c;
-  font-size: 4em;
-  margin: 0 0 0.15em 0;
-  text-shadow: 0px 0px 10px #ec008c;
-  font-weight: normal;
-  width: 2.02%;
-}
-
 .Contenu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2em 0em 2em 3em;
+  justify-content: center;
+  margin: 1.5em 0 1.5em 0;
+  padding: 0;
+}
+
+.flex-item {
+  display: flex;
+  font-weight: normal;
+  font-family: "Kiona";
+  margin: 2em;
+  padding: 0;
+  height: 200px;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-decoration: none;
+  text-align: center;
 }
 
 .Contenu a:hover {
@@ -63,7 +70,7 @@
   color: white;
   font-weight: normal;
   font-family: "Kiona";
-  margin: 1.5em;
+  margin: 2em;
   padding: 0;
   height: 200px;
   width: 200px;
@@ -76,6 +83,10 @@
 
 .Conteneur h3 {
   margin: 0 0.25em 0 0.25em;
+}
+
+.Conteneur i {
+  font-size: 4em;
 }
 
 #Logo_1, #Logo_4 {
@@ -142,6 +153,32 @@
   top: 5.25em;
 }
 
+/* POUR LES ECRANS INFERIEURS A 1757px DE LARGE */
+@media screen and (max-width:1757px) {
+  .flex-web-2 {
+    display: none;
+  }
+
+  .flex-audiovisuel {
+    display: none;
+  }
+
+  .flex-audiovisuel-2 {
+    display: none;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 1489px DE LARGE */
+@media screen and (max-width:1489px) {
+  .flex-web {
+    display: none;
+  }
+
+  .flex-audiovisuel, .flex-audiovisuel-2 {
+    display: flex;
+  }
+}
+
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
 @media screen and (max-width:1280px) {
   #Menu_Haut h1 {
@@ -172,5 +209,12 @@
 
   #Contenu_Principal {
     padding-left: 0;
+  }
+}
+
+/* POUR LES ECRANS INFERIEURS A 820px DE LARGE */
+@media screen and (max-width:820px) {
+  .flex-audiovisuel, .flex-audiovisuel-2 {
+    display: none;
   }
 }

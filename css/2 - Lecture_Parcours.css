@@ -61,6 +61,9 @@
 }
 
 #Partie_Basse {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 25em);
   background-color: rgba(0, 0, 0, 0.3);
   color: #135a87;
   font-family: "Kiona";
@@ -73,8 +76,8 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 #Position_Partie_Basse i {
@@ -94,23 +97,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-}
-
-#Bloque_1 {
-  display: flex;
-  flex-direction: row;
   width: 50%;
-}
-
-#Bloque_2 {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-}
-
-#Footer_Bas {
-  min-height: 20vh;
-  flex-grow: 1;
 }
 
 .Elements_bas {
@@ -118,7 +105,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  text-align: center;
+  width: 25%;
 }
 
 .Elements_bas h4 {
@@ -135,16 +123,6 @@
   text-decoration: none;
   color: #135a87;
   font-weight: bolder;
-}
-
-.Slash {
-  font-family: "Kiona";
-  color: #ec008c;
-  font-size: 4em;
-  margin: 0 0 0.15em 0;
-  text-shadow: 0px 0px 10px #ec008c;
-  font-weight: normal;
-  width: 2.02%;
 }
 
 .Contenu {
@@ -169,6 +147,10 @@
 
   .Contenu {
     margin: 2em 5em 2em 5em;
+  }
+
+  #Bloque_1, #Bloque_2 {
+    width: 100%;
   }
 }
 
