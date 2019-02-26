@@ -2,39 +2,36 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-left: 25em;
+  margin: 0;
+  margin-left: 25em;
+  padding: 0;
 }
 
 #Menu_Haut {
-  border-bottom: 2px solid #135a87;
-  background-color: rgba(0, 0, 0, 0.6);
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#Centre_Menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #135a87;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-#Centre_Menu a {
+#Menu_Haut a {
   text-decoration: none;
   font-family: "Kiona";
   color: #135a87;
   font-size: 1em;
   font-weight: normal;
   cursor: pointer;
-  width: 32.66%;
+  width: 33.33%;
   text-align: center;
 }
 
-#Centre_Menu a h1 {
+#Menu_Haut a h1 {
   font-weight: normal;
 }
 
-#Centre_Menu h1:hover {
+#Menu_Haut h1:hover {
   color: #ec008c;
   transition-duration: 500ms;
 }
@@ -45,56 +42,160 @@
 }
 
 #Contenu form {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: 2em auto 2em auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 2em auto 2em auto;
+}
+
+.contact_box {
+  width: 100%;
+    height: 4em;
+    margin-bottom: 3em;
+}
+
+.Angle {
+  position: relative;
+  bottom: 100%;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.Angle_Bleu_1 {
+position: absolute;
+  border-top: 2px solid #135a87;
+  border-left: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  top: -4px;
+  left: -2px;
+}
+
+.Angle_Bleu_2 {
+  position: absolute;
+  border-bottom: 2px solid #135a87;
+  border-right: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+    bottom: -2px;
+    right: -8px;
+}
+
+.Angle_Bleu_3 {
+  position: absolute;
+  border-top: 2px solid #135a87;
+  border-right: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  right: -8px;
+  top: -4px;
+}
+
+.Angle_Bleu_4 {
+    position: absolute;
+  border-bottom: 2px solid #135a87;
+  border-left: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  left: -2px;
+    bottom: -2px;
 }
 
 #Contenu form input, #Contenu form textarea {
-  margin: 1em 0 1em 0;
   background-color: rgba(0, 0, 0, 0.3);
   border: 0;
 }
 
-#Contenu form input {
-  height: 3em;
+.contact_box input {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
   font-family: "Kiona";
   font-size: 1.5em;
-  padding-left: 1em;
   font-weight: bolder;
   color: white;
+  padding-left: 6px;
+}
+.contact_box input:focus {
+outline: none;
 }
 
 #Contenu form input::placeholder {
   color: #135a87;
 }
 
-#Contenu form textarea {
-  height: 6em;
-  font-family: "Kiona";
-  font-size: 1.5em;
-  padding-left: 1em;
-  font-weight: bolder;
-  color: white;
-  padding-top: 0.75em;
+.contact_boxarea {
+  position: relative;
+  z-index: 10;
+  height: 15em;
+  width: 100%;
 }
 
-#Contenu form textarea::placeholder {
+.contact_boxarea textarea {
+  position: relative;
+  z-index: 100;
+  min-height: 100%;
+  width: 100%;
+  resize: none;
+  font-family: "Kiona";
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: white;
+    padding-left: 6px;
+}
+
+.contact_boxarea textarea:focus {
+  outline: none;
+}
+
+.contact_boxarea textarea::placeholder {
   color: #135a87;
 }
 
 #Bouton_Envoyer {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 50%;
+height: 4em;
+    justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 6em;
 }
 
+
+#Bouton_Envoyer .Angle_Bleu_2 {
+  position: absolute;
+  border-bottom: 2px solid #135a87;
+  border-right: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+    bottom: -2px;
+    right: -2px;
+}
+
+#Bouton_Envoyer .Angle_Bleu_3 {
+  position: absolute;
+  border-top: 2px solid #135a87;
+  border-right: 2px solid #135a87;
+  height: 1em;
+  width: 1em;
+  right: -2px;
+  top: -4px;
+}
+
+
 #Bouton_Envoyer input {
-  width: 50%;
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .Slash {
@@ -104,7 +205,6 @@
   margin: 0 0 0.15em 0;
   text-shadow: 0px 0px 10px #ec008c;
   font-weight: normal;
-  width: 2.02%;
 }
 
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
@@ -135,14 +235,10 @@
     color: #ec008c;
   }
 
-  #Contenu_Principal {
-    padding-left: 0;
-  }
-
   #Contenu form {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: 2em auto 2em auto;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 2em auto 2em auto;
   }
 }

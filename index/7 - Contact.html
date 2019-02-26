@@ -7,7 +7,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- DESCRIPTION -->
-  <title>Loic Oulerich - Contact</title>
+  <title>Loic Oulerich</title>
   <meta name="description" content="Développeur Symfony et Vidéaste">
   <meta name="keywords" content="Développeur, Symfony, PHP, Web, Vidéaste, Gaming">
   <!-- CSS -->
@@ -88,7 +88,7 @@
       <div id="Social_Haut">
         <div id="Facebook">
           <a href="https://www.facebook.com/loic.oulerich" target="_blank">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>
+            <i class="fab fa-facebook-square" aria-hidden></i>
             <p>
               ...//FACEBOOK
             </p>
@@ -96,7 +96,7 @@
         </div>
         <div id="Linkedin">
           <a href="https://www.linkedin.com/in/loic-oulerich-4a9536136/" target="_blank">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <i class="fab fa-linkedin" aria-hidden></i>
             <p>
               ...//LINKEDIN
             </p>
@@ -107,7 +107,7 @@
       <div id="Social_Bas">
         <div id="YouTube">
           <a href="https://www.youtube.com/channel/UCqnit1-kFqW4h2CVnsvEs2g" target="_blank">
-            <i class="fab fa-youtube" aria-hidden="true"></i>
+            <i class="fab fa-youtube" aria-hidden></i>
             <p>
               ...//YOUTUBE
             </p>
@@ -115,7 +115,7 @@
         </div>
         <div id="Twitch">
           <a href="https://www.twitch.tv/fas_nesta" target="_blank">
-            <i class="fab fa-twitch" aria-hidden="true"></i>
+            <i class="fab fa-twitch" aria-hidden></i>
             <p>
               ...//TWITCH
             </p>
@@ -148,41 +148,40 @@
     </div>
   </div>
 
+
   <main id="Contenu_Principal">
     <nav id="Menu_Haut">
-      <div id="Centre_Menu">
-        <a href="1 - Parcours.html">
-          <h1>
-            &#60;&#60;&nbsp;PARCOURS&nbsp;&#62;&#62;
-          </h1>
-        </a>
+      <a href="1 - Parcours.html">
+        <h1>
+          <<&nbsp;PARCOURS&nbsp;>>
+        </h1>
+      </a>
 
-        <p class="Slash">
-          /
-        </p>
+      <p class="Slash">
+        /
+      </p>
 
-        <a href="3 - Compétences.html">
-          <h1>
-            &#60;&nbsp;COMPÉTENCES&nbsp;&#62;
-          </h1>
-        </a>
+      <a href="3 - Compétences.html">
+        <h1>
+          <&nbsp;COMPÉTENCES&nbsp;>
+        </h1>
+      </a>
 
-        <p class="Slash">
-          /
-        </p>
+      <p class="Slash">
+        /
+      </p>
 
-        <a href="5 - Projets.html">
-          <h1>
-            &#60;&nbsp;PROJETS&nbsp;&#62;
-          </h1>
-        </a>
-      </div>
+      <a href="5 - Projets.html">
+        <h1>
+          <&nbsp;PROJETS&nbsp;>
+        </h1>
+      </a>
     </nav>
 
     <div id="Contenu">
       <form method="post" action="traitement.php">
         <!-- Permet l'envoie PHP -->
-        <div>
+        <div class="contact_box">
           <input placeholder="NOM" type="text" name="pseudo" id="pseudo" autofocus required maxlength="20" />
           <div class="Angle">
             <div class="Angle_Bleu_1"></div>
@@ -192,7 +191,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="contact_box">
           <input placeholder="E-MAIL" type="email" name="e-mail" id="e-mail" required />
           <div class="Angle">
             <div class="Angle_Bleu_1"></div>
@@ -202,7 +201,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="contact_box">
           <input placeholder="OBJET" type="text" name="Objet" id="Objet" required />
           <div class="Angle">
             <div class="Angle_Bleu_1"></div>
@@ -212,7 +211,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="contact_boxarea">
           <textarea placeholder="MESSAGE" name="Message" id="Message" required></textarea>
           <div class="Angle">
             <div class="Angle_Bleu_1"></div>
@@ -226,6 +225,12 @@
         <!-- Bouton envoyer -->
         <div id="Bouton_Envoyer">
           <input style="color: #135a87" type="submit" value="ENVOYER">
+          <div class="Angle">
+            <div class="Angle_Bleu_1"></div>
+            <div class="Angle_Bleu_2"></div>
+            <div class="Angle_Bleu_3"></div>
+            <div class="Angle_Bleu_4"></div>
+          </div>
         </div>
 
       </form>
@@ -235,10 +240,10 @@
     <div id="Menu_Mobile_Bas">
       <footer id="Mobile_Footer">
         <div id="Icone_Footer">
-          <a href="1 - Parcours.html"><i class="far fa-building" aria-hidden="true"></i></a>
-          <a href="3 - Compétences.html"><i class="far fa-code" aria-hidden="true"></i></a>
-          <a href="5 - Projets.html"><i class="far fa-folder-open" aria-hidden="true"></i></a>
-          <a href="#"><i id="Selection_Menu_Bas" class="far fa-envelope" aria-hidden="true"></i></a>
+          <a href="1 - Parcours.html"><i class="far fa-building" aria-hidden></i></a>
+          <a href="3 - Compétences.html"><i class="far fa-code" aria-hidden></i></a>
+          <a href="5 - Projets.html"><i class="far fa-folder-open" aria-hidden></i></a>
+          <a href="#"><i id="Selection_Menu_Bas" class="far fa-envelope" aria-hidden></i></a>
         </div>
       </footer>
     </div>
