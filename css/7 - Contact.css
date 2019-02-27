@@ -4,16 +4,16 @@
 }
 
 #Contenu form {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: 6em auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 6em auto 2em auto;
 }
 
 .contact_box {
   width: 100%;
-    height: 4em;
-    margin-bottom: 3em;
+  height: 4em;
+  margin-bottom: 3em;
 }
 
 .Angle {
@@ -26,7 +26,7 @@
 }
 
 .Angle_Bleu_1 {
-position: absolute;
+  position: absolute;
   border-top: 2px solid #135a87;
   border-left: 2px solid #135a87;
   height: 1em;
@@ -41,8 +41,8 @@ position: absolute;
   border-right: 2px solid #135a87;
   height: 1em;
   width: 1em;
-    bottom: -2px;
-    right: -8px;
+  bottom: -2px;
+  right: -12px;
 }
 
 .Angle_Bleu_3 {
@@ -51,18 +51,18 @@ position: absolute;
   border-right: 2px solid #135a87;
   height: 1em;
   width: 1em;
-  right: -8px;
+  right: -12px;
   top: -4px;
 }
 
 .Angle_Bleu_4 {
-    position: absolute;
+  position: absolute;
   border-bottom: 2px solid #135a87;
   border-left: 2px solid #135a87;
   height: 1em;
   width: 1em;
   left: -2px;
-    bottom: -2px;
+  bottom: -2px;
 }
 
 #Contenu form input, #Contenu form textarea {
@@ -80,10 +80,11 @@ position: absolute;
   font-size: 1.5em;
   font-weight: bolder;
   color: white;
-  padding-left: 6px;
+  padding-left: 10px;
 }
+
 .contact_box input:focus {
-outline: none;
+  outline: none;
 }
 
 #Contenu form input::placeholder {
@@ -107,7 +108,27 @@ outline: none;
   font-size: 1.5em;
   font-weight: bolder;
   color: white;
-    padding-left: 6px;
+  padding: 10px 0 0 10px;
+}
+
+.contact_boxarea .Angle_Bleu_1 {
+  top: -12px;
+  left: -2px;
+}
+
+.contact_boxarea .Angle_Bleu_2 {
+  bottom: -2px;
+  right: -12px;
+}
+
+.contact_boxarea .Angle_Bleu_3 {
+  right: -12px;
+  top: -12px;
+}
+
+.contact_boxarea .Angle_Bleu_4 {
+  left: -2px;
+  bottom: -2px;
 }
 
 .contact_boxarea textarea:focus {
@@ -120,15 +141,13 @@ outline: none;
 
 #Bouton_Envoyer {
   display: flex;
-  width: 50%;
-height: 4em;
-    justify-content: center;
+  width: 40%;
+  height: 3em;
+  justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6em;
+  margin: 4em auto 0 auto;
+  font-size: 1.5em;
 }
-
 
 #Bouton_Envoyer .Angle_Bleu_2 {
   position: absolute;
@@ -136,8 +155,8 @@ height: 4em;
   border-right: 2px solid #135a87;
   height: 1em;
   width: 1em;
-    bottom: -2px;
-    right: -2px;
+  bottom: -2px;
+  right: -2px;
 }
 
 #Bouton_Envoyer .Angle_Bleu_3 {
@@ -149,7 +168,6 @@ height: 4em;
   right: -2px;
   top: -4px;
 }
-
 
 #Bouton_Envoyer input {
   position: relative;
@@ -189,9 +207,9 @@ height: 4em;
   }
 
   #Contenu form {
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      margin: 2em auto 2em auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2em auto 2em auto;
   }
 }

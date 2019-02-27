@@ -1,13 +1,3 @@
-
-#Selection_Gauche, #Selection_Droite {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: #135a87;
-}
-
 #Partie {
   background-color: rgba(0, 0, 0, 0.3);
   color: #135a87;
@@ -22,25 +12,11 @@
   color: #ec008c;
 }
 
-#Selection_Gauche, #Selection_Centre, #Selection_Droite {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 33.33%;
-}
-
-#Selection_Centre {
-  color: #ec008c;
-}
-
 #Position_Partie {
   display: flex;
-  flex-direction: row;
   text-align: center;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
 }
 
 #Position_Partie a:hover {
@@ -50,8 +26,7 @@
 
 #Position_Partie i {
   font-size: 2em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin: 0 0.5em 0 0.5em;
 }
 
 #Position_Partie h2 {
@@ -63,6 +38,32 @@
 #Position_Partie h3 {
   font-size: 1.5em;
   font-weight: normal;
+}
+
+#Selection_Gauche, #Selection_Centre, #Selection_Droite {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#Selection_Gauche, #Selection_Droite {
+  text-decoration: none;
+  color: #135a87;
+  width: 32%;
+}
+
+#Selection_Centre {
+  width: 35%;
+}
+
+#Cancel {
+  width: 3%;
+  padding-right: 2em;
+}
+
+#Selection_Centre {
+  color: #ec008c;
 }
 
 #Partie_Basse {
@@ -102,7 +103,6 @@
 
 .Elements_bas {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -116,18 +116,8 @@
   font-weight: bolder;
 }
 
-.Elements_bas a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  color: #135a87;
-  font-weight: bolder;
-}
-
 .Contenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   color: white;
   justify-content: center;

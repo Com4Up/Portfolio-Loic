@@ -38,7 +38,6 @@
 
 .Contenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.5em 0 1.5em 0;
@@ -46,18 +45,11 @@
 }
 
 .flex-item {
-  display: flex;
-  font-weight: normal;
-  font-family: "Kiona";
   margin: 2em;
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0);
-  text-decoration: none;
-  text-align: center;
 }
 
 .Contenu a:hover {
@@ -66,6 +58,9 @@
 
 .Conteneur {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: rgba(4, 29, 51, 0.5);
   color: white;
   font-weight: normal;
@@ -74,11 +69,8 @@
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 2px solid rgba(28, 110, 138, 0.3);
   text-decoration: none;
-  text-align: center;
 }
 
 .Conteneur h3 {
@@ -150,19 +142,11 @@
 
 /* POUR LES ECRANS INFERIEURS A 1489px DE LARGE */
 @media screen and (max-width:1489px) {
-  .flex-formations {
+  .flex-formations, .flex-experiences {
     display: none;
   }
 
-  .flex-formations-1 {
-    display: flex;
-  }
-
-  .flex-experiences {
-    display: none;
-  }
-
-  .flex-experiences-1 {
+  .flex-formations-1, .flex-experiences-1 {
     display: flex;
   }
 }
@@ -239,12 +223,7 @@
 
 /* POUR LES ECRANS INFERIEURS A 552px DE LARGE */
 @media screen and (max-width:552px) {
-
-  .flex-experiences {
-    display: none;
-  }
-
-  .flex-formations-1 {
+  .flex-experiences, .flex-formations-1 {
     display: none;
   }
 }

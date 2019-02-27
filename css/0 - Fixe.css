@@ -435,9 +435,9 @@ body {
   }
 
   #Contenu_Principal {
-      padding: 0 0 0 0;
-      margin: 0 0 2em 0;
-    }
+    padding: 0 0 0 0;
+    margin: 0 0 2em 0;
+  }
 
   #Menu_Lateral {
     display: none;
@@ -491,6 +491,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 2em;
     color: #135a87;
     font-size: 2em;
     background-color: rgba(0, 0, 0, 0.3);

@@ -1,6 +1,5 @@
 .Position_Partie {
   display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
 }
@@ -40,7 +39,6 @@
 
 .Contenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.5em 0 1.5em 0;
@@ -48,18 +46,11 @@
 }
 
 .flex-item {
-  display: flex;
-  font-weight: normal;
-  font-family: "Kiona";
   margin: 2em;
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0);
-  text-decoration: none;
-  text-align: center;
 }
 
 .Contenu a:hover {
@@ -68,6 +59,9 @@
 
 .Conteneur {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: rgba(4, 29, 51, 0.5);
   color: white;
   font-weight: normal;
@@ -76,11 +70,8 @@
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 2px solid rgba(28, 110, 138, 0.3);
   text-decoration: none;
-  text-align: center;
 }
 
 .Conteneur h3 {
@@ -137,30 +128,18 @@
 
 /* POUR LES ECRANS INFERIEURS A 1750px DE LARGE */
 @media screen and (max-width:1750px) {
-  .flex-acquis {
-    display: none;
-  }
-
-  .flex-encours {
-    display: none;
-  }
-
-  .flex-langues {
+  .flex-acquis, .flex-encours, .flex-langues {
     display: none;
   }
 }
 
-/* POUR LES ECRANS INFERIEURS A 1490px DE LARGE */
+/* POUR LES ECRANS INFERIEURS A 1488px DE LARGE */
 @media screen and (max-width:1488px) {
   .flex-acquis-2 {
     display: flex;
   }
 
-  .flex-encours-2 {
-    display: none;
-  }
-
-  .flex-langues-2 {
+  .flex-encours-2, .flex-langues-2 {
     display: none;
   }
 }
@@ -178,11 +157,7 @@
 
 /* POUR LES ECRANS INFERIEURS A 1220px DE LARGE */
 @media screen and (max-width:1220px) {
-  .flex-acquis-2 {
-    display: none;
-  }
-
-  .flex-langues-3 {
+  .flex-acquis-2, .flex-langues-3 {
     display: none;
   }
 }
@@ -227,25 +202,13 @@
     display: none;
   }
 
-  .flex-acquis-2 {
-    display: flex;
-  }
-
-  .flex-langues {
+  .flex-acquis-2, .flex-langues {
     display: flex;
   }
 }
 
 @media screen and (max-width:820px) {
-  .flex-acquis {
-    display: none;
-  }
-
-  .flex-acquis-2 {
-    display: none;
-  }
-
-  .flex-langues {
+  .flex-acquis, .flex-acquis-2, .flex-langues {
     display: none;
   }
 }

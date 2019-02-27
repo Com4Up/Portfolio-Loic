@@ -1,6 +1,5 @@
 .Position_Partie {
   display: flex;
-  flex-direction: row;
 }
 
 .Angle_F1 {
@@ -38,7 +37,6 @@
 
 .Contenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin: 1.5em 0 1.5em 0;
@@ -46,18 +44,11 @@
 }
 
 .flex-item {
-  display: flex;
-  font-weight: normal;
-  font-family: "Kiona";
   margin: 2em;
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0);
-  text-decoration: none;
-  text-align: center;
 }
 
 .Contenu a:hover {
@@ -66,6 +57,9 @@
 
 .Conteneur {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: rgba(4, 29, 51, 0.5);
   color: white;
   font-weight: normal;
@@ -74,11 +68,8 @@
   padding: 0;
   height: 200px;
   width: 200px;
-  align-items: center;
-  justify-content: center;
   border: 2px solid rgba(28, 110, 138, 0.3);
   text-decoration: none;
-  text-align: center;
 }
 
 .Conteneur h3 {
@@ -159,15 +150,7 @@
 
 /* POUR LES ECRANS INFERIEURS A 1757px DE LARGE */
 @media screen and (max-width:1757px) {
-  .flex-web-2 {
-    display: none;
-  }
-
-  .flex-audiovisuel {
-    display: none;
-  }
-
-  .flex-audiovisuel-2 {
+  .flex-web-2, .flex-audiovisuel, .flex-audiovisuel-2 {
     display: none;
   }
 }
@@ -204,7 +187,6 @@
     font-size: 1.2em;
   }
 }
-
 
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
 @media screen and (max-width:1060px) {

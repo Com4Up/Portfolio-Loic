@@ -1,12 +1,3 @@
-#Selection_Gauche, #Selection_Droite {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  text-decoration: none;
-  color: #135a87;
-}
-
 #Partie {
   background-color: rgba(0, 0, 0, 0.3);
   color: #135a87;
@@ -23,11 +14,24 @@
 
 #Selection_Gauche, #Selection_Centre, #Selection_Droite {
   display: flex;
-  flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 33.33%;
+}
+
+#Selection_Gauche, #Selection_Droite {
+  text-decoration: none;
+  color: #135a87;
+  width: 32%;
+}
+
+#Selection_Centre {
+  width: 35%;
+}
+
+#Cancel {
+  width: 3%;
+  padding-right: 2em;
 }
 
 #Selection_Centre {
@@ -36,7 +40,6 @@
 
 #Position_Partie {
   display: flex;
-  flex-direction: row;
   text-align: center;
   justify-content: space-around;
   align-items: center;
@@ -49,8 +52,7 @@
 
 #Position_Partie i {
   font-size: 2em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin: 0 0.5em 0 0.5em;
 }
 
 #Position_Partie h2 {
@@ -77,17 +79,13 @@
 
 #Position_Partie_Basse {
   display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
   flex-wrap: wrap;
   width: 100%;
 }
 
 #Position_Partie_Basse i {
   font-size: 2em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin: 0 0.5em 0 0.5em;
   color: #ec008c;
 }
 
@@ -119,7 +117,6 @@
 
 .Elements_bas {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -135,7 +132,6 @@
 
 .Elements_bas a {
   display: flex;
-  flex-direction: row;
   align-items: center;
   text-decoration: none;
   color: #135a87;
@@ -144,7 +140,6 @@
 
 .Contenu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   color: white;
   justify-content: center;
@@ -209,10 +204,7 @@
   #Position_Partie h3 {
     font-size: 1.25em;
   }
-
 }
 
 /* POUR LES ECRANS INFERIEURS A 835px DE LARGE */
-@media screen and (max-width:835px) {
-
-}
+@media screen and (max-width:835px) {}
