@@ -153,6 +153,10 @@
   top: 5.25em;
 }
 
+.flex-audiovisuel {
+  display: none;
+}
+
 /* POUR LES ECRANS INFERIEURS A 1757px DE LARGE */
 @media screen and (max-width:1757px) {
   .flex-web-2 {
@@ -188,7 +192,19 @@
   .Slash {
     font-size: 2.5em;
   }
+
+  .flex-audiovisuel, .flex-audiovisuel-2 {
+    display: none;
+  }
 }
+
+/* POUR LES ECRANS INFERIEURS A 1150px DE LARGE */
+@media screen and (max-width:1150px) {
+  #Menu_Haut h1 {
+    font-size: 1.2em;
+  }
+}
+
 
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
 @media screen and (max-width:1060px) {
@@ -209,6 +225,10 @@
 
   #Contenu_Principal {
     padding-left: 0;
+  }
+
+  .flex-audiovisuel, .flex-audiovisuel-2 {
+    display: flex;
   }
 }
 

@@ -189,6 +189,13 @@
   }
 }
 
+/* POUR LES ECRANS INFERIEURS A 1150px DE LARGE */
+@media screen and (max-width:1150px) {
+  #Menu_Haut h1 {
+    font-size: 1.2em;
+  }
+}
+
 /* POUR LES ECRANS INFERIEURS A 1060px DE LARGE */
 @media screen and (max-width:1060px) {
   #Menu_Haut h1 {
