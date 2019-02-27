@@ -50,11 +50,11 @@
 #Selection_Gauche, #Selection_Droite {
   text-decoration: none;
   color: #135a87;
-  width: 32%;
+  width: 30%;
 }
 
 #Selection_Centre {
-  width: 35%;
+  width: 30%;
 }
 
 #Cancel {
