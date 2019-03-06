@@ -30,7 +30,6 @@
 }
 
 #Cancel {
-  width: 3%;
   padding-right: 2em;
 }
 
@@ -67,9 +66,6 @@
 }
 
 #Partie_Basse {
-  position: fixed;
-  bottom: 0;
-  width: calc(100% - 25em);
   background-color: rgba(0, 0, 0, 0.3);
   color: #135a87;
   font-family: "Kiona";
@@ -145,6 +141,8 @@
   justify-content: center;
   margin: 2em 10em 2em 10em;
   font-family: "Lato";
+  min-height: 100%;
+  flex-grow: 1;
 }
 
 /* POUR LES ECRANS INFERIEURS A 1280px DE LARGE */
@@ -188,9 +186,8 @@
   }
 
   #Partie_Basse {
-    position: fixed;
-    bottom: 4em;
     width: 100%;
+    margin-bottom: 2em;
   }
 
   #Position_Partie i {
