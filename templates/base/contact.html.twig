@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+{% block title %} - Contact{% endblock %}
+
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href={{asset("css/contact.css")}}/>
+{% endblock %}
+
+{% block body%}
+  <div id="Contenu">
+    <form method="post" action="traitement.php">
+      <!-- Permet l'envoie PHP -->
+      <div class="contact_box">
+        <input placeholder="NOM" type="text" name="pseudo" id="pseudo" autofocus required maxlength="20" />
+        <div class="Angle">
+          <div class="Angle_Bleu_1"></div>
+          <div class="Angle_Bleu_2"></div>
+          <div class="Angle_Bleu_3"></div>
+          <div class="Angle_Bleu_4"></div>
+        </div>
+      </div>
+
+      <div class="contact_box">
+        <input placeholder="E-MAIL" type="email" name="e-mail" id="e-mail" required />
+        <div class="Angle">
+          <div class="Angle_Bleu_1"></div>
+          <div class="Angle_Bleu_2"></div>
+          <div class="Angle_Bleu_3"></div>
+          <div class="Angle_Bleu_4"></div>
+        </div>
+      </div>
+
+      <div class="contact_box">
+        <input placeholder="OBJET" type="text" name="Objet" id="Objet" required />
+        <div class="Angle">
+          <div class="Angle_Bleu_1"></div>
+          <div class="Angle_Bleu_2"></div>
+          <div class="Angle_Bleu_3"></div>
+          <div class="Angle_Bleu_4"></div>
+        </div>
+      </div>
+
+      <div class="contact_boxarea">
+        <textarea placeholder="MESSAGE" name="Message" id="Message" required></textarea>
+        <div class="Angle">
+          <div class="Angle_Bleu_1"></div>
+          <div class="Angle_Bleu_2"></div>
+          <div class="Angle_Bleu_3"></div>
+          <div class="Angle_Bleu_4"></div>
+        </div>
+      </div>
+
+
+      <!-- Bouton envoyer -->
+      <div id="Bouton_Envoyer">
+        <input style="color: #135a87" type="submit" value="ENVOYER">
+        <div class="Angle">
+          <div class="Angle_Bleu_1"></div>
+          <div class="Angle_Bleu_2"></div>
+          <div class="Angle_Bleu_3"></div>
+          <div class="Angle_Bleu_4"></div>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+{% endblock %}
