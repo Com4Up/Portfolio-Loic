@@ -1,0 +1,72 @@
+{% extends 'cms_base.html.twig' %}
+{% block title %} - CMS{% endblock %}
+
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href="{{asset('css/1-Parcours.css')}}">
+{% endblock %}
+
+{% block body%}
+  <a href="{{path('Parcours_new')}}">nouveau parcours</a>
+  <div class="Partie">
+    <div class="Position_Partie">
+      <div class="Angle_F1"></div>
+      <h2>FORMATIONS</h2>
+      <div class="Angle_F2"></div>
+    </div>
+  </div>
+
+  <div class="Contenu">
+    {% for Parcours  in Parcours %}
+    {% if Parcours.type == "scolaire" %}
+    <a href="{{ path('lectures_parcours', { 'id': Parcours.id }) }}" class="Conteneur">
+      <h3>
+        {{ Parcours.nom }}
+      </h3>
+      <div class="Angle">
+        <div class="Angle_Bleu_1"></div>
+        <div class="Angle_Rose_1"></div>
+        <div class="Angle_Rose_2"></div>
+        <div class="Angle_Bleu_2"></div>
+      </div>
+    </a>
+    <a href="{{ path('parcours_delete', { 'id': Parcours.id }) }}"><i class="fal fa-times" aria-hidden="true"></i></a>
+    {% endif %}
+    {% endfor %}
+    <div class="flex-item flex-formations"></div>
+    <div class="flex-item flex-formations"></div>
+    <div class="flex-item flex-formations flex-formations-1"></div>
+  </div>
+
+  <div class="Partie">
+    <div class="Position_Partie">
+      <div class="Angle_F1"></div>
+      <h2>EXPÉRIENCES</h2>
+      <div class="Angle_F2"></div>
+    </div>
+  </div>
+
+  <div class="Contenu">
+    {% for Parcours  in Parcours %}
+    {% if Parcours.type == "professionel" %}
+      <a href="{{ path('lectures_parcours', { 'id': Parcours.id }) }}" class="Conteneur">
+      <h3>
+        {{ Parcours.nom }}
+      </h3>
+      <div class="Angle">
+        <div class="Angle_Bleu_1"></div>
+        <div class="Angle_Rose_1"></div>
+        <div class="Angle_Rose_2"></div>
+        <div class="Angle_Bleu_2"></div>
+      </div>
+    </a>
+    {% endif %}
+    {% endfor %}
+
+    <div class="flex-item flex-experiences-1"></div>
+    <div class="flex-item flex-experiences-1"></div>
+    <div class="flex-item flex-experiences"></div>
+  </div>
+
+{% endblock %}
+{% block javascripts %}
+{% endblock %}

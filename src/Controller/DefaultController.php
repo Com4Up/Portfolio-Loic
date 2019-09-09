@@ -26,22 +26,6 @@ class DefaultController extends Controller
   }
 
     /**
-     * @Route("/competences", name="competences")
-     */
-    public function competences()
-    {
-        return $this->render('base/competences.html.twig');
-    }
-
-    /**
-     * @Route("/lectures-competences", name="lectures-competences")
-     */
-    public function lectures_competences()
-    {
-        return $this->render('base/lectures_competences.html.twig');
-    }
-
-    /**
      * @Route("/projets", name="projets")
      */
     public function projets()

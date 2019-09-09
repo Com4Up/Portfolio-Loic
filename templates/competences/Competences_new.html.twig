@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title %} - Contact{% endblock %}
+
+{% block stylesheets %}
+    <link type="text/css" rel="stylesheet" href={{asset("css/lectures_competences.css")}}/>
+{% endblock %}
+
+{% block body%}
+<h1>Create new Competences</h1>
+
+  {{ include('competencess/_form.html.twig') }}
+
+  <a href="{{ path('competences') }}">back to list</a>
+
+{% endblock %}
